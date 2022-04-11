@@ -1,0 +1,205 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,epsfig} 
+\usepackage{hyperref}
+\hypersetup{colorlinks}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{booktabs,siunitx}
+\usepackage{xurl}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
+\usepackage{sectsty}
+\sectionfont{\centering}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,0.5}
+\hypersetup{colorlinks,
+linkcolor=darkblue,
+filecolor=darkgreen,
+urlcolor=darkred,
+citecolor=darkblue}
+\setlength{\unitlength}{0.5cm}
+\setlength{\unitlength}{0.5cm}
+\hoffset-0.3in \voffset-0.6in \textheight 8.8in \textwidth 6in
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\textit{VR20}}
+\fancyhead[RE,LO]{\textit{B. Tech Honors}}
+\fancyfoot[CE,CO]{\textit{Computer Science and Engineering}}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 20CSH4801A %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Change the subject code here.
+\centerline{{\large \bf 20CSH4801A}}
+
+\vspace{0.25cm}
+
+%Change the subject name here.
+\centerline{{\Large \bf Advanced Python Programming}}
+
+% Description about the course
+\begin{table}[!h]
+\centering
+%Do not Change the below items up to \midrule (line no. 59)
+\begin{tabular}{@{}|
+>{\columncolor[HTML]{C0C0C0}}l |l|
+>{\columncolor[HTML]{C0C0C0}}r |r|@{}}
+\toprule
+Course Category & Honors & Credits & 4 \\ 
+\midrule
+\begin{tabular}[c]{@{}l@{}}Stream/ \\ Course Type\end{tabular} &
+
+%Write the stream name by replacing "AI \& ML, and Data Science" (given below).
+\begin{tabular}[c]{@{}l@{}}AI \& ML, and Data Science\\ Theory\end{tabular}  & L-T-P & 3-1-0 \\ 
+\midrule
+
+% Write the prerequisites by replacing "Object Oriented Programming \\ using Python (20ES2103A) /\\ Programming Essential \\ in Python (20ES2103C)" (given below).
+% Write a subject name in multiple lines using '\\' in-between.
+Prerequisites & \begin{tabular}[c]{@{}l@{}}Object Oriented Programming \\ using Python (20ES2103A) /\\ Programming Essential \\ in Python (20ES2103C)\end{tabular} 
+
+& \begin{tabular}[c]{@{}r@{}}Continuous Eval\\ Semester End Eval\\ Total Marks\end{tabular} & \begin{tabular}[c]{@{}r@{}}30\\ 70\\ 100\end{tabular} \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent{\textbf{COURSE OUTCOMES}}
+
+\vspace{0.3cm}
+
+% Change course outcomes here. More COs are added as \item under enumerate (given below).
+
+\begin{enumerate}[noitemsep,nolistsep, leftmargin=*]
+\item Apply Python arrays and computer graphics libraries to perform data exploration and visualization.
+\item Apply Python packages to solve problems related to file input/output, database access and data analysis.
+\item Apply different Python libraries to implement data concurrency, parallelism, asynchronous and network programming.
+\item Apply Scipy and SciKit Python libraries to perform scientific computations.
+\end{enumerate}
+\vspace{0.3cm}
+
+\noindent{\textit{Contribution of Course Outcomes towards achievement of Program Outcomes (1 – Low, 2 - Medium, 3 – High)}}
+
+% CO-PO, BTL and POI Mapping. Change the values in '-' places.
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|cccccccccccc|cc|c|l|}
+\hline
+\rowcolor[HTML]{9B9B9B} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}}  & \multicolumn{12}{c|}{\cellcolor[HTML]{9B9B9B}PO} & \multicolumn{2}{l|}{\cellcolor[HTML]{9B9B9B}PSO} & \cellcolor[HTML]{9B9B9B} & \multicolumn{1}{c|}{\cellcolor[HTML]{9B9B9B}} \\ 
+\cline{2-15}
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{1}{|l|}{\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}CO}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}1} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}2} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}3} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}4} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}5} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}6} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}7} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}8} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}9} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}10} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}11} & 12 & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}1} & 2 & \multirow{-2}{*}{\rotatebox[origin=c]{90}{\cellcolor[HTML]{9B9B9B}BTL}} & \multicolumn{1}{c|}{\multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}POI}}\\ 
+\hline
+\cellcolor[HTML]{C0C0C0}1 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-}     & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}         & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} 
+&    & \multicolumn{1}{c|}{-} & - & - & 
+\begin{tabular}[c]{@{}l@{}}-, -, -, \\ -, -, -, \\ -, -\end{tabular} \\ \hline
+\cellcolor[HTML]{C0C0C0}2 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-}     & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}         & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}         &    & \multicolumn{1}{c|}{-} & - & - & 
+\begin{tabular}[c]{@{}l@{}}-, -, -, \\ -, -, -, \\ -, -\end{tabular} \\ \hline
+\cellcolor[HTML]{C0C0C0}3 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-}     & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}  & \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}         &    & \multicolumn{1}{c|}{-} & - & - & 
+\begin{tabular}[c]{@{}l@{}} -, -, -, \\ -, -, -, \\ -, -\end{tabular} \\ \hline
+\cellcolor[HTML]{C0C0C0}4 & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-}     & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}        & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}     
+& \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{} & \multicolumn{1}{c|}{}         &    & \multicolumn{1}{c|}{-} & - & - & 
+\begin{tabular}[c]{@{}l@{}}-, -, -, \\ -, -, -, \\ -, -\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+
+
+\noindent{\bf COURSE CONTENT} 
+\vspace{0.3cm}
+
+% Change UNIT I contents here. More chapter names are added as \textit{\textbf{...}} (given below).
+\noindent{\bf UNIT I}
+\vspace{0.1cm}\\
+\textit{\textbf{Arrays with Numpy:}} Creating an Array, Mathematical Operations, Squaring an Array, Indexing and Slicing, Shape Manipulation\\
+%sample
+\textit{\textbf{Computer Graphics:}} Introduction to Computer Graphics, Python Turtle Graphics, Creating Computer Art, Introduction to Matplotlib, Graphing with Matplotlib pyplot, Graphical User Interfaces, The wxPython GUI Library, Events in wxPython User Interfaces, PyDraw wxPython Example Application.
+
+\vspace{0.3cm}
+
+% Change UNIT II contents here. More chapter names are added as \textit{\textbf{...}} (given below).
+\noindent{\bf UNIT II}
+\vspace{0.1cm}\\
+\textit{\textbf{File Input/output:}} Introduction to Files, Paths and IO, Reading and Writing Files, Stream IO, Working with CSV Files, Working with Excel Files\\
+\textit{\textbf{Database Access:}} Introduction to Databases, Python DB-API, PyMySQL Module\\
+%sample
+\textit{\textbf{Data Analysis with Pandas:}} The data structure of Pandas: Series, Data Frame, Panel; Inserting and Exploring data: CSV, XLS, JSON, Database.
+
+\vspace{0.3cm}
+
+% Change UNIT III contents here. More chapter names are added as \textit{\textbf{...}} (given below).
+\noindent{\bf UNIT III}
+\vspace{0.1cm}\\
+\textit{\textbf{Concurrency and Parallelism:}} Introduction to Concurrency and Parallelism, Threading, Multiprocessing, Inter Thread/Process Synchronisation, Futures, Concurrency with Async-IO.\\
+\textit{\textbf{Asynchronous Programming:}} Reactive Programming Introduction, RxPy Observables, Observers andSubjects, RxPy Operators.\\
+%sample
+\textit{\textbf{Network Programming:}} Introduction to Sockets, Sockets in Python.
+
+\vspace{0.3cm} 
+
+% Change UNIT IV contents here. More chapter names are added as \textit{\textbf{...}} (given below).
+\noindent{\bf UNIT IV}
+\vspace{0.1cm}\\
+\textit{\textbf{Computation Using Scipy:}} Optimization and Minimization, Interpolation, Integration, Statistics, Spatial and Clustering Analysis, Signal and Image Processing, Sparse Matrices, Reading and Writing Files.\\
+%sample
+\textit{\textbf{SciKit: Going One Step Further:}} Scikit Image: Dynamic Threshold, Local Maxima; Scikit-Learn: Linear Regression and Clustering.
+
+\vspace{0.3cm} 
+
+\noindent{\bf TEXTBOOKS}
+
+\vspace{0.3cm}
+
+% Change textbooks here. More textbooks are added as \item under enumerate (given below).
+
+\begin{enumerate}[noitemsep,nolistsep, leftmargin=*]
+    \item Madhavan, S.(2015). Mastering Python for Data Science. Packt Publishing Ltd.
+    \item Hunt, J. (2019). Advanced Guide to Python 3 Programming. Springer.
+    \item Bressert, E. (2012). SciPy and NumPy: an overview for developers.
+O’REILLY.
+\end{enumerate}
+
+\vspace{0.3cm} 
+
+\noindent{\bf REFERENCE BOOKS}
+
+\vspace{0.3cm}
+
+% Change reference books here. More reference books are added as \item under enumerate (given below).
+
+\begin{enumerate}[noitemsep,nolistsep, leftmargin=*]
+    \item Jaworski, M., & Ziadé, T. (2016). Expert Python Programming. Packt
+Publishing Ltd.
+    \item Pichara, K., & Pieringer, C. (2017). Advanced Computer Programming in
+Python. CreateSpace Independent Publishing Platform.
+    \item Lanaro, G., Nguyen, Q., & Kasampalis, S. (2019). Advanced Python
+Programming. Packt Publishing Ltd.
+\end{enumerate}
+
+\vspace{0.3cm} 
+
+\noindent{\bf E-RESOURCES AND OTHER DIGITAL MATERIALS}
+
+\vspace{0.3cm}
+
+% Change e-resources and other digital Materials here. More e-resources and other digital Materials are added as \item under enumerate (given below).
+
+\begin{enumerate}[noitemsep,nolistsep, leftmargin=*]
+    \item Advanced Python Programming Training Course $\mid$ Koenig Solutions. (z.d.). Koenig-Solutions.Com. \url{https://www.koenig-solutions.com/python-programming-training}. Last accessed on 21-03-2022
+    \item Advanced Python Programming Training - Accelebrate. (z.d.). Accelebrate. \url{https://www.accelebrate.com/training/python-advanced}. Last accessed on 21-03-2022
+    \item Advanced Python with Project work and Internship (Recorded Lectures). (z.d.). ICT Academy at IITK. \url{https://ict.iitk.ac.in/product/advanced-python/} Last accessed on 21-03-2022
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
